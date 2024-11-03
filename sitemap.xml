@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://notes.stultus.in/garden_tags/</loc>
+    <loc>https://stultus.in/notes/garden_tags/</loc>
   </url><url>
-    <loc>https://notes.stultus.in/library_tags/</loc>
+    <loc>https://stultus.in/notes/library_tags/</loc>
   </url><url>
-    <loc>https://notes.stultus.in/project_tags/</loc>
+    <loc>https://stultus.in/notes/project_tags/</loc>
   </url><url>
-    <loc>https://notes.stultus.in/</loc>
+    <loc>https://stultus.in/notes/</loc>
   </url>
 </urlset>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>stultus notes</title>
-    <link>https://notes.stultus.in/</link>
+    <link>https://stultus.in/notes/</link>
     <description>Recent content on stultus notes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
-    <atom:link href="https://notes.stultus.in/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stultus.in/notes/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
