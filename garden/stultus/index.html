@@ -2,53 +2,196 @@
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     
     
+
     
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/all.min.css">
-    <link disabled id="dark-mode-theme" rel="stylesheet" href="../../css/dark.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/my_style.css">
+
     
     
     
     <title>stultus notes | stultus</title>
     <meta name="description" content="&lsquo;Stultus&rsquo; is a Latin word and it means &lsquo;Stupid/Foolish&rsquo;. And I use this as my pseudonym">
-</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeToggleBtn = document.getElementById('dark-mode-toggle');
+            const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+
+            
+            function getCSSVariableValue(variable) {
+                return getComputedStyle(document.body).getPropertyValue(variable).trim();
+            }
+
+            
+            function initParticles() {
+                const particlesElement = document.getElementById('particles-js');
+                if (particlesElement) {
+                    particlesJS('particles-js', {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": { "enable": true, "value_area": 800 }
+                            },
+                            "color": { "value": getCSSVariableValue('--particle-color') },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": getCSSVariableValue('--line-color'),
+                                "opacity": 0.2,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 0.5
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": { "width": 0, "color": "#000000" }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": { "enable": false },
+                                "onclick": { "enable": false },
+                                "resize": true
+                            }
+                        },
+                        "retina_detect": true
+                    });
+                }
+            }
+
+            
+            function toggleTheme() {
+                if (!themeToggleBtn) return; 
+
+                body.classList.toggle('dark-theme');
+
+                
+                if (themeIcon) {
+                    if (body.classList.contains('dark-theme')) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        themeIcon.classList.remove('fa-sun');
+                        themeIcon.classList.add('fa-moon');
+                        localStorage.setItem('theme', 'light');
+                    }
+                }
+
+                
+                if (document.getElementById('particles-js')) {
+                    
+                    if (window.pJSDom && window.pJSDom.length) {
+                        window.pJSDom[0].pJS.fn.vendors.destroypJS();
+                        window.pJSDom = [];
+                    }
+
+                    
+                    initParticles();
+                }
+            }
+
+            
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            } else if (savedTheme === 'light') {
+                body.classList.remove('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            } else {
+                
+                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+                if (prefersDarkScheme.matches) {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                    }
+                }
+            }
+
+            
+            initParticles();
+
+            
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', toggleTheme);
+            }
+        });
+    </script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="https://stultus.in/notes/">
             
             <b style="font-weight: 800;">stultus notes</b>
             
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in"> Website</a>
+                        <a class="nav-link" href="https://stultus.in"> Website</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/about"> About</a>
+                    </li>
+                
+                <li class="nav-item px-2 pt-1">
+                    <button class="btn" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
-                </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in/about"> About</a>
-                </li>
-             
-            <li class="nav-item px-2 pt-1">
-                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
-            </li>
             </ul>
         </div>
     </div>
-</nav><div id="content">
+</nav>
+<div id="content">
 
-<div class="container" style="max-width: 800px;">
+
+
+
+<div class="container diary-page" style="max-width: 800px;">
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
             <h1 class="display-2 mb-4 text-center">stultus</h1>
@@ -65,7 +208,7 @@
             <p class="card-date m-0">
                 
                 
-                    Created Oct 23, 2023 - 
+                    Created Oct 23, 2023 -
                 
                 Last updated: Nov 3, 2024
             </p>
@@ -80,14 +223,14 @@
                 </div>
                 <div class="col-sm-8" style="text-align: right;">
                     
-                
                     
-                    <span class="badge tag-badge">pseudonym</span>
                     
-                    <span class="badge tag-badge">personal</span>
+                    <a href="../../garden_tags/pseudonym" class="badge tag-badge">pseudonym</a>
                     
-                
-                
+                    <a href="../../garden_tags/personal" class="badge tag-badge">personal</a>
+                    
+                    
+                    
                 </div>
             </div>
         </div>
@@ -108,12 +251,12 @@
         <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
     </svg>
 </button>
-</h1><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>            ╔═══╗╔════╗╔╗─╔╗╔╗───╔════╗╔╗─╔╗╔═══╗
-</span></span><span style="display:flex;"><span>            ║╔═╗║║╔╗╔╗║║║─║║║║───║╔╗╔╗║║║─║║║╔═╗║
-</span></span><span style="display:flex;"><span>            ║╚══╗╚╝║║╚╝║║─║║║║───╚╝║║╚╝║║─║║║╚══╗
-</span></span><span style="display:flex;"><span>            ╚══╗║──║║──║║─║║║║─╔╗──║║──║║─║║╚══╗║
-</span></span><span style="display:flex;"><span>            ║╚═╝║──║║──║╚═╝║║╚═╝║──║║──║╚═╝║║╚═╝║
-</span></span><span style="display:flex;"><span>            ╚═══╝──╚╝──╚═══╝╚═══╝──╚╝──╚═══╝╚═══╝
+</h1><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">            ╔═══╗╔════╗╔╗─╔╗╔╗───╔════╗╔╗─╔╗╔═══╗
+</span></span><span class="line"><span class="cl">            ║╔═╗║║╔╗╔╗║║║─║║║║───║╔╗╔╗║║║─║║║╔═╗║
+</span></span><span class="line"><span class="cl">            ║╚══╗╚╝║║╚╝║║─║║║║───╚╝║║╚╝║║─║║║╚══╗
+</span></span><span class="line"><span class="cl">            ╚══╗║──║║──║║─║║║║─╔╗──║║──║║─║║╚══╗║
+</span></span><span class="line"><span class="cl">            ║╚═╝║──║║──║╚═╝║║╚═╝║──║║──║╚═╝║║╚═╝║
+</span></span><span class="line"><span class="cl">            ╚═══╝──╚╝──╚═══╝╚═══╝──╚╝──╚═══╝╚═══╝
 </span></span></code></pre></div><p>&lsquo;Stultus&rsquo; is a Latin word and it means &lsquo;Stupid/Foolish&rsquo;.</p>
 <p><code>stultus</code> is the <a href="https://en.wikipedia.org/wiki/Pseudonym">pseudonym</a> I use on different platforms. If it is already taken, I use altered versions like <code>stultusz</code> , <code>stultuzz</code> or <code>_stultus</code>. I started to use this pseudonym on <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a> chat rooms in 2008.  Pseudonyms were a thing in IRC. Also, it is cool to have one. Thus the name and hence the domain name. I recommend reading this article on wired.com - <a href="https://www.wired.com/2014/04/why-we-need-online-alter-egos-now-more-than-ever/">We Need Online Alter Egos Now More Than Ever</a>. a pseudonym is not an alter ego, but you get the idea.</p>
 

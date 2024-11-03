@@ -3,57 +3,199 @@
 	<meta name="generator" content="Hugo 0.136.5">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     
     
+
     
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/all.min.css">
-    <link disabled id="dark-mode-theme" rel="stylesheet" href="./css/dark.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/my_style.css">
+
     
     
     
     <title>stultus notes</title>
     <meta name="description" content="“I wasn&#39;t going to eat it, I was just going to taste it.” - Winnie the Pooh">
-</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeToggleBtn = document.getElementById('dark-mode-toggle');
+            const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+
+            
+            function getCSSVariableValue(variable) {
+                return getComputedStyle(document.body).getPropertyValue(variable).trim();
+            }
+
+            
+            function initParticles() {
+                const particlesElement = document.getElementById('particles-js');
+                if (particlesElement) {
+                    particlesJS('particles-js', {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": { "enable": true, "value_area": 800 }
+                            },
+                            "color": { "value": getCSSVariableValue('--particle-color') },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": getCSSVariableValue('--line-color'),
+                                "opacity": 0.2,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 0.5
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": { "width": 0, "color": "#000000" }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": { "enable": false },
+                                "onclick": { "enable": false },
+                                "resize": true
+                            }
+                        },
+                        "retina_detect": true
+                    });
+                }
+            }
+
+            
+            function toggleTheme() {
+                if (!themeToggleBtn) return; 
+
+                body.classList.toggle('dark-theme');
+
+                
+                if (themeIcon) {
+                    if (body.classList.contains('dark-theme')) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        themeIcon.classList.remove('fa-sun');
+                        themeIcon.classList.add('fa-moon');
+                        localStorage.setItem('theme', 'light');
+                    }
+                }
+
+                
+                if (document.getElementById('particles-js')) {
+                    
+                    if (window.pJSDom && window.pJSDom.length) {
+                        window.pJSDom[0].pJS.fn.vendors.destroypJS();
+                        window.pJSDom = [];
+                    }
+
+                    
+                    initParticles();
+                }
+            }
+
+            
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            } else if (savedTheme === 'light') {
+                body.classList.remove('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            } else {
+                
+                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+                if (prefersDarkScheme.matches) {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                    }
+                }
+            }
+
+            
+            initParticles();
+
+            
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', toggleTheme);
+            }
+        });
+    </script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="https://stultus.in/notes/">
             
             <b style="font-weight: 800;">stultus notes</b>
             
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in"> Website</a>
+                        <a class="nav-link" href="https://stultus.in"> Website</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/about"> About</a>
+                    </li>
+                
+                <li class="nav-item px-2 pt-1">
+                    <button class="btn" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
-                </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in/about"> About</a>
-                </li>
-             
-            <li class="nav-item px-2 pt-1">
-                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
-            </li>
             </ul>
         </div>
     </div>
-</nav><div id="content">
+</nav>
+<div id="content">
 
+<div id="particles-js"></div>
 <div class="mt-5 pt-5 pb-1">
-    <div class="container" >
-       	<h1 class="name display-1"><b>Hrishikesh Bhaskaran</b></h1>
+    <div class="container">
+        <h1 class="name display-1"><b>Hrishikesh Bhaskaran</b></h1>
     </div>
 </div>
+
 <div class="mb-5 py-4">
     <div class="container">
         <h2 class="bio lh-base fs-1 serif">“I wasn&#39;t going to eat it, I was just going to taste it.” - Winnie the Pooh</h2>
@@ -61,18 +203,17 @@
 </div>
 
 <div class="container py-3">
-	<div class="row justify-content-between my-5">
-		
-		<div class="col-lg-4">
-			
-          	<div class="pb-4">
-              	<a class="heading fs-2" href="./notes/garden/">Digital Garden</a>
-          	</div>      
-			 <p class="subheading">These are my personal notes(<a href="https://schof.co/digital-garden/">digital garden</a>) where I share things I learn about this world.</p> 
-			
-			<div class="row row-cols-1 g-4 mb-5">
-				
-				<div class="col">
+    
+    <div class="pb-4">
+        <a class="heading fs-2" href="./notes/garden/">Digital Garden</a>
+    </div>
+    
+    <p class="subheading">These are my personal notes(<a href="https://schof.co/digital-garden/">digital garden</a>) where I share things I learn about this world.</p>
+    
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+        
+        <div class="col">
     <div class="card h-100 top-highlight">
         <div class="card-body">
             <div class="row justify-content-between">
@@ -95,8 +236,8 @@
         </div>
     </div>   
 </div>   
-				
-				<div class="col">
+        
+        <div class="col">
     <div class="card h-100 top-highlight">
         <div class="card-body">
             <div class="row justify-content-between">
@@ -119,8 +260,8 @@
         </div>
     </div>   
 </div>   
-				
-				<div class="col">
+        
+        <div class="col">
     <div class="card h-100 top-highlight">
         <div class="card-body">
             <div class="row justify-content-between">
@@ -143,8 +284,8 @@
         </div>
     </div>   
 </div>   
-				
-				<div class="col">
+        
+        <div class="col">
     <div class="card h-100 top-highlight">
         <div class="card-body">
             <div class="row justify-content-between">
@@ -167,39 +308,15 @@
         </div>
     </div>   
 </div>   
-				
-      		</div>
-			
-			<div class="d-flex flex-row-reverse">
-        		<a href="./notes/garden/" role="button" class="btn btn-sm see-all">See all articles</a>
-      		</div>
-      		
-		</div>
-    	
-		
-		<div class="col-lg-7">
-			
-			<div class="row row-cols-1 row-cols-md-2 g-4 mb-5" data-masonry='{"percentPosition": true }'>
-				
-    		</div>
-			
-  		</div>
-	</div>
-
-	
-	<div class="container py-3">
-		<div class="row justify-content-between my-5">
-			<div class="col-sm-4 col-lg-3">
-				
-			</div>
-			<div class="col me-auto">
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-					
-				</div>
-			</div>
-		</div>
-	</div>
+        
+    </div>
+    
+    <div class="d-flex flex-row-reverse">
+        <a href="./notes/garden/" role="button" class="btn btn-sm see-all">See all articles</a>
+    </div>
+    
 </div>
+
 
         </div><div class="container">
     <div class="row justify-content-between">

@@ -2,51 +2,191 @@
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     
     
+
     
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/all.min.css">
-    <link disabled id="dark-mode-theme" rel="stylesheet" href="../../css/dark.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/my_style.css">
+
     
     
     
     <title>stultus notes | Influencer</title>
     <meta name="description" content="">
-</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeToggleBtn = document.getElementById('dark-mode-toggle');
+            const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+
+            
+            function getCSSVariableValue(variable) {
+                return getComputedStyle(document.body).getPropertyValue(variable).trim();
+            }
+
+            
+            function initParticles() {
+                const particlesElement = document.getElementById('particles-js');
+                if (particlesElement) {
+                    particlesJS('particles-js', {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": { "enable": true, "value_area": 800 }
+                            },
+                            "color": { "value": getCSSVariableValue('--particle-color') },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": getCSSVariableValue('--line-color'),
+                                "opacity": 0.2,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 0.5
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": { "width": 0, "color": "#000000" }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": { "enable": false },
+                                "onclick": { "enable": false },
+                                "resize": true
+                            }
+                        },
+                        "retina_detect": true
+                    });
+                }
+            }
+
+            
+            function toggleTheme() {
+                if (!themeToggleBtn) return; 
+
+                body.classList.toggle('dark-theme');
+
+                
+                if (themeIcon) {
+                    if (body.classList.contains('dark-theme')) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        themeIcon.classList.remove('fa-sun');
+                        themeIcon.classList.add('fa-moon');
+                        localStorage.setItem('theme', 'light');
+                    }
+                }
+
+                
+                if (document.getElementById('particles-js')) {
+                    
+                    if (window.pJSDom && window.pJSDom.length) {
+                        window.pJSDom[0].pJS.fn.vendors.destroypJS();
+                        window.pJSDom = [];
+                    }
+
+                    
+                    initParticles();
+                }
+            }
+
+            
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            } else if (savedTheme === 'light') {
+                body.classList.remove('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            } else {
+                
+                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+                if (prefersDarkScheme.matches) {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                    }
+                }
+            }
+
+            
+            initParticles();
+
+            
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', toggleTheme);
+            }
+        });
+    </script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="https://stultus.in/notes/">
             
             <b style="font-weight: 800;">stultus notes</b>
             
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in"> Website</a>
+                        <a class="nav-link" href="https://stultus.in"> Website</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/about"> About</a>
+                    </li>
+                
+                <li class="nav-item px-2 pt-1">
+                    <button class="btn" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
-                </li>
-            <li class='nav-item '>
-                    <a class="nav-link" href="https://stultus.in/about"> About</a>
-                </li>
-             
-            <li class="nav-item px-2 pt-1">
-                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
-            </li>
             </ul>
         </div>
     </div>
-</nav><div id="content">
+</nav>
+<div id="content">
 
 <div class="container">
     <div class="py-5 rounded-3">
