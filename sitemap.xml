@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://stultus.in/notes/garden/footnote_in_markdown/</loc>
+    <lastmod>2024-11-03T20:26:05+05:30</lastmod>
+  </url><url>
     <loc>https://stultus.in/notes/garden_tags/</loc>
-    <lastmod>2024-11-03T19:01:27+05:30</lastmod>
+    <lastmod>2024-11-03T20:26:05+05:30</lastmod>
+  </url><url>
+    <loc>https://stultus.in/notes/garden_tags/markdown/</loc>
+    <lastmod>2024-11-03T20:26:05+05:30</lastmod>
+  </url><url>
+    <loc>https://stultus.in/notes/garden_tags/note/</loc>
+    <lastmod>2024-11-03T20:26:05+05:30</lastmod>
+  </url><url>
+    <loc>https://stultus.in/notes/</loc>
+    <lastmod>2024-11-03T20:26:05+05:30</lastmod>
+  </url><url>
+    <loc>https://stultus.in/notes/garden_tags/syntax/</loc>
+    <lastmod>2024-11-03T20:26:05+05:30</lastmod>
   </url><url>
     <loc>https://stultus.in/notes/garden_tags/influencer/</loc>
     <lastmod>2024-11-03T19:01:27+05:30</lastmod>
@@ -15,12 +30,6 @@
     <lastmod>2024-11-03T19:01:27+05:30</lastmod>
   </url><url>
     <loc>https://stultus.in/notes/garden_tags/marketing/</loc>
-    <lastmod>2024-11-03T19:01:27+05:30</lastmod>
-  </url><url>
-    <loc>https://stultus.in/notes/garden_tags/note/</loc>
-    <lastmod>2024-11-03T19:01:27+05:30</lastmod>
-  </url><url>
-    <loc>https://stultus.in/notes/</loc>
     <lastmod>2024-11-03T19:01:27+05:30</lastmod>
   </url><url>
     <loc>https://stultus.in/notes/garden/</loc>
