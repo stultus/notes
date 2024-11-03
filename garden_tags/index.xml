@@ -2,25 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Garden_tags on stultus notes</title>
-    <link>http://localhost:1313/garden_tags/</link>
+    <link>https://stultus.in/notes/garden_tags/</link>
     <description>Recent content in Garden_tags on stultus notes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
-    <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/garden_tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Nov 2024 19:01:27 +0530</lastBuildDate>
+    <atom:link href="https://stultus.in/notes/garden_tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Influencer</title>
+      <link>https://stultus.in/notes/garden_tags/influencer/</link>
+      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/influencer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Influencer Marketing</title>
+      <link>https://stultus.in/notes/garden_tags/influencer-marketing/</link>
+      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/influencer-marketing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketing</title>
+      <link>https://stultus.in/notes/garden_tags/marketing/</link>
+      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/marketing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Note</title>
+      <link>https://stultus.in/notes/garden_tags/note/</link>
+      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/note/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Garden</title>
+      <link>https://stultus.in/notes/garden_tags/digital-garden/</link>
+      <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/digital-garden/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Note Taking</title>
+      <link>https://stultus.in/notes/garden_tags/note-taking/</link>
+      <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/note-taking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Process</title>
+      <link>https://stultus.in/notes/garden_tags/process/</link>
+      <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/process/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zettelkasten</title>
+      <link>https://stultus.in/notes/garden_tags/zettelkasten/</link>
+      <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/zettelkasten/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Personal</title>
-      <link>http://localhost:1313/garden_tags/personal/</link>
+      <link>https://stultus.in/notes/garden_tags/personal/</link>
       <pubDate>Mon, 23 Oct 2023 16:33:15 +0530</pubDate>
-      <guid>http://localhost:1313/garden_tags/personal/</guid>
+      <guid>https://stultus.in/notes/garden_tags/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Pseudonym</title>
-      <link>http://localhost:1313/garden_tags/pseudonym/</link>
+      <link>https://stultus.in/notes/garden_tags/pseudonym/</link>
       <pubDate>Mon, 23 Oct 2023 16:33:15 +0530</pubDate>
-      <guid>http://localhost:1313/garden_tags/pseudonym/</guid>
+      <guid>https://stultus.in/notes/garden_tags/pseudonym/</guid>
       <description></description>
     </item>
   </channel>

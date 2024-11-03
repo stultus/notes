@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Process on stultus notes</title>
+    <link>https://stultus.in/notes/garden_tags/process/</link>
+    <description>Recent content in Process on stultus notes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Hrishikesh Bhaskaran ♥</copyright>
+    <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://stultus.in/notes/garden_tags/process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Garden</title>
+      <link>https://stultus.in/notes/garden/digital_garden/</link>
+      <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden/digital_garden/</guid>
+      <description>A Digital Garden/Zettelkasten is a personal tool for thinking and writing. It has hypertextual features to make a web of thought possible. The difference to other systems is that you create a web of thoughts instead of notes of arbitrary size and form, and emphasize connection, not a collection.</description>
+    </item>
+  </channel>
+</rss>
