@@ -52,17 +52,19 @@
                             "color": { "value": getCSSVariableValue('--particle-color') },
                             "line_linked": {
                                 "enable": true,
-                                "distance": 150,
-                                "color": getCSSVariableValue('--line-color'),
-                                "opacity": 0.2,
+                                "distance": 500,
+                                "color": getCSSVariableValue('--grey'),
+                                "opacity": 0.1,
                                 "width": 1
                             },
                             "move": {
                                 "enable": true,
-                                "speed": 0.5
+                                "speed": 0.5,
+                                "out_mode":"bounce",
+                                "attract.enable":true,
                             },
                             "opacity": {
-                                "value": 0.5,
+                                "value": 0.1,
                                 "random": false
                             },
                             "size": {
@@ -75,10 +77,10 @@
                             }
                         },
                         "interactivity": {
-                            "detect_on": "canvas",
+                            "detect_on": "window",
                             "events": {
                                 "onhover": { "enable": false },
-                                "onclick": { "enable": false },
+                                "onclick": { "enable": true , "mode":"bubble"},
                                 "resize": true
                             }
                         },
@@ -212,12 +214,20 @@
         <div id="filters" class="d-flex flex-wrap" role="group" aria-label="Filter options">
             
             
+            <input type="checkbox" class="btn-check" id="js-iso-academic-paper" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-academic-paper">academic-paper</label>
+            
+            
             <input type="checkbox" class="btn-check" id="js-iso-computer-science" autocomplete="off">
             <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-computer-science">computer-science</label>
             
             
             <input type="checkbox" class="btn-check" id="js-iso-digital-garden" autocomplete="off">
             <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-digital-garden">digital-garden</label>
+            
+            
+            <input type="checkbox" class="btn-check" id="js-iso-distributed-computing" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-distributed-computing">distributed-computing</label>
             
             
             <input type="checkbox" class="btn-check" id="js-iso-influencer" autocomplete="off">
@@ -270,6 +280,44 @@
 
 <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="blogposts">
+        
+        
+
+    
+    
+
+    
+    
+
+    
+    
+
+<div class='col js-iso-academic-paper js-iso-distributed-computing js-iso-computer-science'>    <div class="card top-highlight">
+        <div class="card-body">
+             
+            <h4 class="card-title">[Academic Paper] A Note on Distributed Computing</h4>
+            <p class="card-text pb-3">Notes from the paper by Jim Waldo, Geoff Wyant, Ann Wollrath and Sam Kendall about Distributed computing</p>
+            
+            <a href="https://stultus.in/notes/garden/a-note-on-distributed-computing-paper/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Nov 5, 2024</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         
         
 
