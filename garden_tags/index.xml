@@ -7,20 +7,27 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
-    <lastBuildDate>Sun, 03 Nov 2024 20:26:05 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2024 01:28:44 +0530</lastBuildDate>
     <atom:link href="https://stultus.in/notes/garden_tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown</title>
-      <link>https://stultus.in/notes/garden_tags/markdown/</link>
-      <pubDate>Sun, 03 Nov 2024 20:26:05 +0530</pubDate>
-      <guid>https://stultus.in/notes/garden_tags/markdown/</guid>
+      <title>Computer-Science</title>
+      <link>https://stultus.in/notes/garden_tags/computer-science/</link>
+      <pubDate>Tue, 05 Nov 2024 01:28:44 +0530</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/computer-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Note</title>
       <link>https://stultus.in/notes/garden_tags/note/</link>
-      <pubDate>Sun, 03 Nov 2024 20:26:05 +0530</pubDate>
+      <pubDate>Tue, 05 Nov 2024 01:28:44 +0530</pubDate>
       <guid>https://stultus.in/notes/garden_tags/note/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>https://stultus.in/notes/garden_tags/markdown/</link>
+      <pubDate>Sun, 03 Nov 2024 20:26:05 +0530</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/markdown/</guid>
       <description></description>
     </item>
     <item>
@@ -38,7 +45,7 @@
       <description></description>
     </item>
     <item>
-      <title>Influencer Marketing</title>
+      <title>Influencer-Marketing</title>
       <link>https://stultus.in/notes/garden_tags/influencer-marketing/</link>
       <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
       <guid>https://stultus.in/notes/garden_tags/influencer-marketing/</guid>
@@ -52,14 +59,14 @@
       <description></description>
     </item>
     <item>
-      <title>Digital Garden</title>
+      <title>Digital-Garden</title>
       <link>https://stultus.in/notes/garden_tags/digital-garden/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://stultus.in/notes/garden_tags/digital-garden/</guid>
       <description></description>
     </item>
     <item>
-      <title>Note Taking</title>
+      <title>Note-Taking</title>
       <link>https://stultus.in/notes/garden_tags/note-taking/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://stultus.in/notes/garden_tags/note-taking/</guid>

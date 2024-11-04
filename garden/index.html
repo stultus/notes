@@ -189,107 +189,109 @@
 <div id="content">
 
 
-<div class="container">
-    <div class="py-5 rounded-3">
-        <div class="container-fluid py-2">
-            <h1 class="display-2 mb-4">Digital Garden</h1>
-            <p class="bio col-md-8 fs-4 serif">These are my personal notes(<a href="https://schof.co/digital-garden/">digital garden</a>) where I share things I learn about this world.</p>
-        </div>
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../">Home</a></li>
+            <li class="breadcrumb-item"><a href="../garden/">Garden</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Digital Garden</li>
+        </ol>
+    </nav>
+</div>
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-2 mb-4">Digital Garden</h1>
+        <p class="lead">Welcome to my <a href="https://schof.co/digital-garden/">digital garden</a>. Here, I share my personal notes and things I learn about the world. Feel free to use any content from here; I appreciate it if you acknowledge the source, but it’s not a problem if you don’t. Please note that there are no permanent links here, except for the domain. This is a living document, so I often rearrange the content, and nothing can be considered complete. Enjoy exploring!</p>
     </div>
 </div>
 
 
 <div class="container mb-5">
-
-    
-    <div class="btn-toolbar mb-2 bio" role="toolbar" aria-label="Toolbar with button groups">
-        <i class="fas fa-filter"></i>
-        <div id="filters" class="button-group">
+    <div class="d-flex align-items-center flex-wrap mb-3">
+        <i class="fas fa-filter me-2"></i>
+        <div id="filters" class="d-flex flex-wrap" role="group" aria-label="Filter options">
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-digital garden" autocomplete="off" data-filter=".js-iso-digital garden">
-            <label class="button" for=".js-iso-digital garden">digital garden</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-computer-science" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-computer-science">computer-science</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-influencer" autocomplete="off" data-filter=".js-iso-influencer">
-            <label class="button" for=".js-iso-influencer">influencer</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-digital-garden" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-digital-garden">digital-garden</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-influencer marketing" autocomplete="off" data-filter=".js-iso-influencer marketing">
-            <label class="button" for=".js-iso-influencer marketing">influencer marketing</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-influencer" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-influencer">influencer</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-markdown" autocomplete="off" data-filter=".js-iso-markdown">
-            <label class="button" for=".js-iso-markdown">markdown</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-influencer-marketing" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-influencer-marketing">influencer-marketing</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-marketing" autocomplete="off" data-filter=".js-iso-marketing">
-            <label class="button" for=".js-iso-marketing">marketing</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-markdown" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-markdown">markdown</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-note" autocomplete="off" data-filter=".js-iso-note">
-            <label class="button" for=".js-iso-note">note</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-marketing" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-marketing">marketing</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-note taking" autocomplete="off" data-filter=".js-iso-note taking">
-            <label class="button" for=".js-iso-note taking">note taking</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-note" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-note">note</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-personal" autocomplete="off" data-filter=".js-iso-personal">
-            <label class="button" for=".js-iso-personal">personal</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-note-taking" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-note-taking">note-taking</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-process" autocomplete="off" data-filter=".js-iso-process">
-            <label class="button" for=".js-iso-process">process</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-personal" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-personal">personal</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-pseudonym" autocomplete="off" data-filter=".js-iso-pseudonym">
-            <label class="button" for=".js-iso-pseudonym">pseudonym</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-process" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-process">process</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-syntax" autocomplete="off" data-filter=".js-iso-syntax">
-            <label class="button" for=".js-iso-syntax">syntax</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-pseudonym" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-pseudonym">pseudonym</label>
             
             
-            <input type="checkbox" class="btn-check" id=".js-iso-zettelkasten" autocomplete="off" data-filter=".js-iso-zettelkasten">
-            <label class="button" for=".js-iso-zettelkasten">zettelkasten</label>  
+            <input type="checkbox" class="btn-check" id="js-iso-syntax" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-syntax">syntax</label>
+            
+            
+            <input type="checkbox" class="btn-check" id="js-iso-zettelkasten" autocomplete="off">
+            <label class="btn btn-sm btn-outline-secondary rounded-pill me-1 mb-1" for="js-iso-zettelkasten">zettelkasten</label>
             
         </div>
     </div>
-
-    
-    
-
-    
-
 </div>
 
 
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="blogposts">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="blogposts">
         
         
 
     
-
     
 
     
+    
 
-<div class='col  js-iso-note js-iso-markdown js-iso-syntax'>
-    <div class="card top-highlight">
+<div class='col js-iso-note js-iso-computer-science'>    <div class="card top-highlight">
         <div class="card-body">
              
-            <h4 class="card-title">Footnotes in Markdown</h4>
-            <p class="card-text pb-3">Syntax to create footnotes in Markdown</p>
+            <h4 class="card-title">Application layout engine</h4>
+            <p class="card-text pb-3">Application layout engines manage the arrangement of user interface (UI) components within software applications, ensuring that elements are displayed correctly across different devices and screen sizes.</p>
             
-            <a href="https://stultus.in/notes/garden/footnote_in_markdown/" class="stretched-link"></a>
+            <a href="https://stultus.in/notes/garden/application_layout_engine/" class="stretched-link"></a>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
                 <div class="col-6">
                     
                     
-                    <span style="font-size: small"> Nov 3, 2024</span>
+                    <span style="font-size: small"> Nov 5, 2024</span>
                 </div>
                 <div class="col-6" style="text-align: right">
                     
@@ -307,15 +309,91 @@
         
 
     
-
     
 
     
-
     
 
-<div class='col  js-iso-note js-iso-influencer marketing js-iso-influencer js-iso-marketing'>
-    <div class="card top-highlight">
+<div class='col js-iso-note js-iso-computer-science'>    <div class="card top-highlight">
+        <div class="card-body">
+             
+            <h4 class="card-title">Document layout engine</h4>
+            <p class="card-text pb-3">A document layout engine is a software program or library that is used to render and format the layout of a document.</p>
+            
+            <a href="https://stultus.in/notes/garden/document_layout_engine/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Nov 5, 2024</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+    
+
+    
+    
+
+    
+    
+
+<div class='col js-iso-note js-iso-markdown js-iso-syntax'>    <div class="card top-highlight">
+        <div class="card-body">
+             
+            <h4 class="card-title">Footnotes in Markdown</h4>
+            <p class="card-text pb-3">Syntax to create footnotes in Markdown</p>
+            
+            <a href="https://stultus.in/notes/garden/footnote_in_markdown/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Nov 3, 2024</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+<div class='col js-iso-note js-iso-influencer-marketing js-iso-influencer js-iso-marketing'>    <div class="card top-highlight">
         <div class="card-body">
              
             <h4 class="card-title">Influencer Marketing</h4>
@@ -345,15 +423,18 @@
         
 
     
-
     
 
     
-
     
 
-<div class='col  js-iso-digital garden js-iso-note taking js-iso-zettelkasten js-iso-process'>
-    <div class="card top-highlight">
+    
+    
+
+    
+    
+
+<div class='col js-iso-digital-garden js-iso-note-taking js-iso-zettelkasten js-iso-process'>    <div class="card top-highlight">
         <div class="card-body">
              
             <h4 class="card-title">Digital Garden</h4>
@@ -383,11 +464,12 @@
         
 
     
-
     
 
-<div class='col  js-iso-pseudonym js-iso-personal'>
-    <div class="card top-highlight">
+    
+    
+
+<div class='col js-iso-pseudonym js-iso-personal'>    <div class="card top-highlight">
         <div class="card-body">
              
             <h4 class="card-title">stultus</h4>
@@ -414,7 +496,7 @@
 </div>
 
         
-     </div>
+    </div>
 </div>
 
 

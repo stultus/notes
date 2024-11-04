@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Note on stultus notes</title>
-    <link>https://stultus.in/notes/garden_tags/note/</link>
-    <description>Recent content in Note on stultus notes</description>
+    <title>Computer-Science on stultus notes</title>
+    <link>https://stultus.in/notes/garden_tags/computer-science/</link>
+    <description>Recent content in Computer-Science on stultus notes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
     <lastBuildDate>Tue, 05 Nov 2024 01:28:44 +0530</lastBuildDate>
-    <atom:link href="https://stultus.in/notes/garden_tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stultus.in/notes/garden_tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Application layout engine</title>
       <link>https://stultus.in/notes/garden/application_layout_engine/</link>
@@ -22,20 +22,6 @@
       <pubDate>Tue, 05 Nov 2024 01:21:44 +0530</pubDate>
       <guid>https://stultus.in/notes/garden/document_layout_engine/</guid>
       <description>A document layout engine is a software program or library that is used to render and format the layout of a document.</description>
-    </item>
-    <item>
-      <title>Footnotes in Markdown</title>
-      <link>https://stultus.in/notes/garden/footnote_in_markdown/</link>
-      <pubDate>Sun, 03 Nov 2024 20:26:05 +0530</pubDate>
-      <guid>https://stultus.in/notes/garden/footnote_in_markdown/</guid>
-      <description>Syntax to create footnotes in Markdown</description>
-    </item>
-    <item>
-      <title>Influencer Marketing</title>
-      <link>https://stultus.in/notes/garden/influencer_marketing/</link>
-      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
-      <guid>https://stultus.in/notes/garden/influencer_marketing/</guid>
-      <description>Notes about influencer marketing - Data, recommendations and ideas</description>
     </item>
   </channel>
 </rss>
