@@ -11,9 +11,9 @@
     <atom:link href="https://stultus.in/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Polymath</title>
-      <link>https://stultus.in/notes/garden/2024-11-17-polymath/</link>
+      <link>https://stultus.in/notes/garden/polymath/</link>
       <pubDate>Sun, 17 Nov 2024 04:59:46 +0000</pubDate>
-      <guid>https://stultus.in/notes/garden/2024-11-17-polymath/</guid>
+      <guid>https://stultus.in/notes/garden/polymath/</guid>
       <description>A Person who knows a lot about different subjects</description>
     </item>
     <item>
@@ -63,13 +63,20 @@
       <link>https://stultus.in/notes/garden/stultus/</link>
       <pubDate>Mon, 23 Oct 2023 16:33:15 +0530</pubDate>
       <guid>https://stultus.in/notes/garden/stultus/</guid>
-      <description>&amp;lsquo;Stultus&amp;rsquo; is a Latin word and it means &amp;lsquo;Stupid/Foolish&amp;rsquo;. And I use this as my pseudonym</description>
+      <description>&amp;lsquo;Stultus&amp;rsquo; is a Latin word and it means &amp;lsquo;Stupid/Foolish&amp;rsquo;. On the internet, &amp;lsquo;stultus&amp;rsquo; is the pseudonym adopted by Hrishikesh Bhaskaran.</description>
+    </item>
+    <item>
+      <title>Cyber bullying</title>
+      <link>https://stultus.in/notes/garden/cyber-bullying/</link>
+      <pubDate>Fri, 13 Oct 2023 06:04:23 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden/cyber-bullying/</guid>
+      <description>The use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature.</description>
     </item>
     <item>
       <title>Cyber Crime</title>
-      <link>https://stultus.in/notes/garden/2024-11-17-cyber-crime/</link>
+      <link>https://stultus.in/notes/garden/cyber-crime/</link>
       <pubDate>Fri, 13 Oct 2023 05:43:20 +0000</pubDate>
-      <guid>https://stultus.in/notes/garden/2024-11-17-cyber-crime/</guid>
+      <guid>https://stultus.in/notes/garden/cyber-crime/</guid>
       <description>Note compiled by Athira Sujatha, Priyanka Navle, Adv. Anupama Sripathi and Hrishikesh Bhaskaran as part of a public interest letter sent to social justice department, Kerala</description>
     </item>
   </channel>
