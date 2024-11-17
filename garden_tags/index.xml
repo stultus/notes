@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
-    <lastBuildDate>Tue, 05 Nov 2024 02:58:24 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 17 Nov 2024 04:59:46 +0000</lastBuildDate>
     <atom:link href="https://stultus.in/notes/garden_tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creativity</title>
+      <link>https://stultus.in/notes/garden_tags/creativity/</link>
+      <pubDate>Sun, 17 Nov 2024 04:59:46 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/creativity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>https://stultus.in/notes/garden_tags/learning/</link>
+      <pubDate>Sun, 17 Nov 2024 04:59:46 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/learning/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Academic-Paper</title>
       <link>https://stultus.in/notes/garden_tags/academic-paper/</link>
@@ -31,44 +45,30 @@
       <description></description>
     </item>
     <item>
-      <title>Note</title>
-      <link>https://stultus.in/notes/garden_tags/note/</link>
-      <pubDate>Tue, 05 Nov 2024 01:28:44 +0530</pubDate>
-      <guid>https://stultus.in/notes/garden_tags/note/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Markdown</title>
       <link>https://stultus.in/notes/garden_tags/markdown/</link>
-      <pubDate>Sun, 03 Nov 2024 20:26:05 +0530</pubDate>
+      <pubDate>Sun, 03 Nov 2024 14:56:05 +0000</pubDate>
       <guid>https://stultus.in/notes/garden_tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Syntax</title>
       <link>https://stultus.in/notes/garden_tags/syntax/</link>
-      <pubDate>Sun, 03 Nov 2024 20:26:05 +0530</pubDate>
+      <pubDate>Sun, 03 Nov 2024 14:56:05 +0000</pubDate>
       <guid>https://stultus.in/notes/garden_tags/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Influencer</title>
-      <link>https://stultus.in/notes/garden_tags/influencer/</link>
-      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
-      <guid>https://stultus.in/notes/garden_tags/influencer/</guid>
       <description></description>
     </item>
     <item>
       <title>Influencer-Marketing</title>
       <link>https://stultus.in/notes/garden_tags/influencer-marketing/</link>
-      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
+      <pubDate>Sun, 03 Nov 2024 13:31:27 +0000</pubDate>
       <guid>https://stultus.in/notes/garden_tags/influencer-marketing/</guid>
       <description></description>
     </item>
     <item>
       <title>Marketing</title>
       <link>https://stultus.in/notes/garden_tags/marketing/</link>
-      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
+      <pubDate>Sun, 03 Nov 2024 13:31:27 +0000</pubDate>
       <guid>https://stultus.in/notes/garden_tags/marketing/</guid>
       <description></description>
     </item>

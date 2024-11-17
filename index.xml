@@ -7,10 +7,17 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
-    <lastBuildDate>Tue, 05 Nov 2024 02:58:24 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 17 Nov 2024 04:59:46 +0000</lastBuildDate>
     <atom:link href="https://stultus.in/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[Academic Paper] A Note on Distributed Computing</title>
+      <title>Polymath</title>
+      <link>https://stultus.in/notes/garden/2024-11-17-polymath/</link>
+      <pubDate>Sun, 17 Nov 2024 04:59:46 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden/2024-11-17-polymath/</guid>
+      <description>A Person who knows a lot about different subjects</description>
+    </item>
+    <item>
+      <title>A Note on Distributed Computing</title>
       <link>https://stultus.in/notes/garden/a-note-on-distributed-computing-paper/</link>
       <pubDate>Tue, 05 Nov 2024 02:58:24 +0530</pubDate>
       <guid>https://stultus.in/notes/garden/a-note-on-distributed-computing-paper/</guid>
@@ -19,28 +26,28 @@
     <item>
       <title>Application layout engine</title>
       <link>https://stultus.in/notes/garden/application_layout_engine/</link>
-      <pubDate>Tue, 05 Nov 2024 01:28:44 +0530</pubDate>
+      <pubDate>Mon, 04 Nov 2024 19:58:44 +0000</pubDate>
       <guid>https://stultus.in/notes/garden/application_layout_engine/</guid>
       <description>Application layout engines manage the arrangement of user interface (UI) components within software applications, ensuring that elements are displayed correctly across different devices and screen sizes.</description>
     </item>
     <item>
       <title>Document layout engine</title>
       <link>https://stultus.in/notes/garden/document_layout_engine/</link>
-      <pubDate>Tue, 05 Nov 2024 01:21:44 +0530</pubDate>
+      <pubDate>Mon, 04 Nov 2024 19:51:44 +0000</pubDate>
       <guid>https://stultus.in/notes/garden/document_layout_engine/</guid>
       <description>A document layout engine is a software program or library that is used to render and format the layout of a document.</description>
     </item>
     <item>
       <title>Footnotes in Markdown</title>
       <link>https://stultus.in/notes/garden/footnote_in_markdown/</link>
-      <pubDate>Sun, 03 Nov 2024 20:26:05 +0530</pubDate>
+      <pubDate>Sun, 03 Nov 2024 14:56:05 +0000</pubDate>
       <guid>https://stultus.in/notes/garden/footnote_in_markdown/</guid>
       <description>Syntax to create footnotes in Markdown</description>
     </item>
     <item>
       <title>Influencer Marketing</title>
       <link>https://stultus.in/notes/garden/influencer_marketing/</link>
-      <pubDate>Sun, 03 Nov 2024 19:01:27 +0530</pubDate>
+      <pubDate>Sun, 03 Nov 2024 13:31:27 +0000</pubDate>
       <guid>https://stultus.in/notes/garden/influencer_marketing/</guid>
       <description>Notes about influencer marketing - Data, recommendations and ideas</description>
     </item>
