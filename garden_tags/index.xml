@@ -7,8 +7,43 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
-    <lastBuildDate>Sun, 17 Nov 2024 04:59:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2024 07:54:28 +0000</lastBuildDate>
     <atom:link href="https://stultus.in/notes/garden_tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Engineering</title>
+      <link>https://stultus.in/notes/garden_tags/engineering/</link>
+      <pubDate>Tue, 19 Nov 2024 07:54:28 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Leadership</title>
+      <link>https://stultus.in/notes/garden_tags/leadership/</link>
+      <pubDate>Tue, 19 Nov 2024 07:54:28 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/leadership/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategy</title>
+      <link>https://stultus.in/notes/garden_tags/strategy/</link>
+      <pubDate>Tue, 19 Nov 2024 07:54:28 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Definition</title>
+      <link>https://stultus.in/notes/garden_tags/definition/</link>
+      <pubDate>Sun, 17 Nov 2024 05:39:56 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/definition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Law</title>
+      <link>https://stultus.in/notes/garden_tags/law/</link>
+      <pubDate>Sun, 17 Nov 2024 05:39:56 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden_tags/law/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Creativity</title>
       <link>https://stultus.in/notes/garden_tags/creativity/</link>
@@ -119,13 +154,6 @@
       <link>https://stultus.in/notes/garden_tags/cybercrime/</link>
       <pubDate>Fri, 13 Oct 2023 06:04:23 +0000</pubDate>
       <guid>https://stultus.in/notes/garden_tags/cybercrime/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Law</title>
-      <link>https://stultus.in/notes/garden_tags/law/</link>
-      <pubDate>Fri, 13 Oct 2023 06:04:23 +0000</pubDate>
-      <guid>https://stultus.in/notes/garden_tags/law/</guid>
       <description></description>
     </item>
   </channel>
