@@ -14,13 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
 
     
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
     
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/my_style.css">
 
     
     
@@ -40,55 +37,6 @@
                 return getComputedStyle(document.body).getPropertyValue(variable).trim();
             }
 
-            
-            function initParticles() {
-                const particlesElement = document.getElementById('particles-js');
-                if (particlesElement) {
-                    particlesJS('particles-js', {
-                        "particles": {
-                            "number": {
-                                "value": 80,
-                                "density": { "enable": true, "value_area": 800 }
-                            },
-                            "color": { "value": getCSSVariableValue('--particle-color') },
-                            "line_linked": {
-                                "enable": true,
-                                "distance": 500,
-                                "color": getCSSVariableValue('--grey'),
-                                "opacity": 0.1,
-                                "width": 1
-                            },
-                            "move": {
-                                "enable": true,
-                                "speed": 0.5,
-                                "out_mode":"bounce",
-                                "attract.enable":true,
-                            },
-                            "opacity": {
-                                "value": 0.1,
-                                "random": false
-                            },
-                            "size": {
-                                "value": 3,
-                                "random": true
-                            },
-                            "shape": {
-                                "type": "circle",
-                                "stroke": { "width": 0, "color": "#000000" }
-                            }
-                        },
-                        "interactivity": {
-                            "detect_on": "window",
-                            "events": {
-                                "onhover": { "enable": false },
-                                "onclick": { "enable": true , "mode":"bubble"},
-                                "resize": true
-                            }
-                        },
-                        "retina_detect": true
-                    });
-                }
-            }
 
             
             function toggleTheme() {
@@ -109,17 +57,6 @@
                     }
                 }
 
-                
-                if (document.getElementById('particles-js')) {
-                    
-                    if (window.pJSDom && window.pJSDom.length) {
-                        window.pJSDom[0].pJS.fn.vendors.destroypJS();
-                        window.pJSDom = [];
-                    }
-
-                    
-                    initParticles();
-                }
             }
 
             
@@ -147,10 +84,6 @@
                     }
                 }
             }
-
-            
-            initParticles();
-
             
             if (themeToggleBtn) {
                 themeToggleBtn.addEventListener('click', toggleTheme);
@@ -190,25 +123,8 @@
     </div>
 </nav>
 <div id="content">
-
-<div id="particles-js"></div>
-<div class="mt-5 pt-5 pb-1">
-    <div class="container">
-        <h1 class="name display-1"><b>Hrishikesh Bhaskaran</b></h1>
-    </div>
-</div>
-
-<div class="mb-5 py-4">
-    <div class="container">
-        <h2 class="bio lh-base fs-1 serif">“I wasn&#39;t going to eat it, I was just going to taste it.” - Winnie the Pooh</h2>
-    </div>
-</div>
-
 <div class="container py-3">
     
-    <div class="pb-4">
-        <a class="heading fs-2" href="https://stultus.in/notes/garden/">Digital Garden</a>
-    </div>
     
     <p class="subheading">Welcome to my <a href="https://schof.co/digital-garden/">digital garden</a>. Here, I share my personal notes and things I learn about the world. Feel free to use any content from here; I appreciate it if you acknowledge the source, but it’s not a problem if you don’t. Please note that there are no permanent links here, except for the domain. This is a living document, so I often rearrange the content, and nothing can be considered complete. Enjoy exploring!</p>
     
@@ -228,7 +144,7 @@
     
     
 
-<div class="col js-iso-engineering js-iso-strategy js-iso-leadership js-iso-engineering js-iso-strategy js-iso-leadership">
+<div class="col js-iso-engineering js-iso-strategy js-iso-leadership">
     <div class="card-garden p-4 rounded-3 position-relative">
         
         <h4 class="mb-3 text-center">Engineering Strategy</h4>
@@ -282,7 +198,7 @@
     
     
 
-<div class="col js-iso-law js-iso-definition">
+<div class="col js-iso-definition">
     <div class="card-garden p-4 rounded-3 position-relative">
         
         <h4 class="mb-3 text-center">Plaintiff</h4>
@@ -589,7 +505,7 @@
     
     
 
-<div class="col js-iso-marketing">
+<div class="col js-iso-influencer-marketing js-iso-marketing js-iso-marketing">
     <div class="card-garden p-4 rounded-3 position-relative">
         
         <h4 class="mb-3 text-center">Influencer Marketing</h4>
@@ -647,7 +563,7 @@
     
     
 
-<div class="col js-iso-note-taking js-iso-zettelkasten js-iso-process">
+<div class="col js-iso-digital-garden js-iso-note-taking js-iso-zettelkasten js-iso-process">
     <div class="card-garden p-4 rounded-3 position-relative">
         
         <h4 class="mb-3 text-center">Digital Garden</h4>
@@ -881,12 +797,6 @@
 <script src="./js/isotope.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 <script src="./js/dark.js"></script>
-<script>
-
-
-var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
-setTheme(savedTheme);
-
 </script>
 <script src="./js/isotope.js"></script>
 <script src="./js/mermaid.min.js"></script>

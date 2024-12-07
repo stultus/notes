@@ -13,13 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
 
     
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
     
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/my_style.css">
 
     
     
@@ -39,55 +36,6 @@
                 return getComputedStyle(document.body).getPropertyValue(variable).trim();
             }
 
-            
-            function initParticles() {
-                const particlesElement = document.getElementById('particles-js');
-                if (particlesElement) {
-                    particlesJS('particles-js', {
-                        "particles": {
-                            "number": {
-                                "value": 80,
-                                "density": { "enable": true, "value_area": 800 }
-                            },
-                            "color": { "value": getCSSVariableValue('--particle-color') },
-                            "line_linked": {
-                                "enable": true,
-                                "distance": 500,
-                                "color": getCSSVariableValue('--grey'),
-                                "opacity": 0.1,
-                                "width": 1
-                            },
-                            "move": {
-                                "enable": true,
-                                "speed": 0.5,
-                                "out_mode":"bounce",
-                                "attract.enable":true,
-                            },
-                            "opacity": {
-                                "value": 0.1,
-                                "random": false
-                            },
-                            "size": {
-                                "value": 3,
-                                "random": true
-                            },
-                            "shape": {
-                                "type": "circle",
-                                "stroke": { "width": 0, "color": "#000000" }
-                            }
-                        },
-                        "interactivity": {
-                            "detect_on": "window",
-                            "events": {
-                                "onhover": { "enable": false },
-                                "onclick": { "enable": true , "mode":"bubble"},
-                                "resize": true
-                            }
-                        },
-                        "retina_detect": true
-                    });
-                }
-            }
 
             
             function toggleTheme() {
@@ -108,17 +56,6 @@
                     }
                 }
 
-                
-                if (document.getElementById('particles-js')) {
-                    
-                    if (window.pJSDom && window.pJSDom.length) {
-                        window.pJSDom[0].pJS.fn.vendors.destroypJS();
-                        window.pJSDom = [];
-                    }
-
-                    
-                    initParticles();
-                }
             }
 
             
@@ -146,10 +83,6 @@
                     }
                 }
             }
-
-            
-            initParticles();
-
             
             if (themeToggleBtn) {
                 themeToggleBtn.addEventListener('click', toggleTheme);
@@ -302,12 +235,6 @@
 <script src="../../js/isotope.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 <script src="../../js/dark.js"></script>
-<script>
-
-
-var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
-setTheme(savedTheme);
-
 </script>
 <script src="../../js/isotope.js"></script>
 <script src="../../js/mermaid.min.js"></script>
