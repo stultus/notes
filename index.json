@@ -83,14 +83,6 @@
     
     ,
     {
-      "title": "Welcome to Grdn",
-      "permalink": "http://localhost:1313/notes/garden/welcome/",
-      "category": "Getting Started",
-      "growth": "🌿 Budding"
-    }
-    
-    ,
-    {
       "title": "Cyber Bullying",
       "permalink": "http://localhost:1313/notes/garden/cyber-bullying/",
       "category": "Law",
