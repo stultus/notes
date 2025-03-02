@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Digital Garden | stultus</title>
-    <link>http://localhost:1313/notes/</link>
+    <link>http://localhost:1313/notes/notes/</link>
     <description>Recent content in Notes on Digital Garden | stultus</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/notes/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Note on Distributed Computing</title>
-      <link>http://localhost:1313/garden/a-note-on-distributed-computing/</link>
+      <link>http://localhost:1313/notes/garden/a-note-on-distributed-computing/</link>
       <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/a-note-on-distributed-computing/</guid>
+      <guid>http://localhost:1313/notes/garden/a-note-on-distributed-computing/</guid>
       <description>&lt;h4 id=&#34;the-actual-paper&#34;&gt;The actual paper&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://scholar.harvard.edu/files/waldo/files/waldo-94.pdf&#34;&gt;A Note On Distributed Computing&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;what-is-in-it&#34;&gt;What is in it?&lt;/h4&gt;&#xA;&lt;p&gt;Much of the current work in distributed, object-oriented systems is based on the assumption that objects form a single ontological class. This class consists of all entities that can be fully described by the specification of the set of interfaces supported by the object and the semantics of the operations in those interfaces. The class includes objects that share a single address space, objects that are in separate address spaces on the same machine, and objects that are in separate address spaces on different machines (with, perhaps, different architectures). On the view that all objects are essentially the same kind of entity, these differences in relative location are merely an aspect of the implementation of the object. Indeed, the location of an object may change over time, as an object migrates from one machine to another or the implementation of the object changes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Gardens</title>
-      <link>http://localhost:1313/garden/digital-garden/</link>
+      <link>http://localhost:1313/notes/garden/digital-garden/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/digital-garden/</guid>
+      <guid>http://localhost:1313/notes/garden/digital-garden/</guid>
       <description>&lt;p&gt;A digital garden / zettelkasten is a different way of thinking about your notes and personal knowledge. It is also a personal tool for thinking and writing. It has hypertextual features to make a web of thought possible.&lt;/p&gt;&#xA;&lt;p&gt;In basic terms, it is a different format for written content on the web. It’s about moving away from blog posts ordered by dates and categories, into more of an interlinked web of notes. Blog posts are articles at a point in time, while here it is a collection of notes which are living documents. &lt;a href=&#34;https://joelhooks.com/digital-garden&#34;&gt;Digital gardens&lt;/a&gt; are also known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;Zettelkasten&lt;/a&gt; or Second Brain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Welcome to Grdn</title>
-      <link>http://localhost:1313/garden/welcome/</link>
+      <link>http://localhost:1313/notes/garden/welcome/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/garden/welcome/</guid>
+      <guid>http://localhost:1313/notes/garden/welcome/</guid>
       <description>&lt;p&gt;Welcome! This is a demo of the Grdn theme for Hugo. I&amp;rsquo;ve set up some example notes to help you understand how everything works.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-wikilinks&#34;&gt;1. Wikilinks&lt;/h3&gt;&#xA;&lt;p&gt;You can link to other notes using Obsidian-style wikilinks. Try these:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Basic link: [[features]]&lt;/li&gt;&#xA;&lt;li&gt;Link with custom text: [[formatting|Markdown Formatting Guide]]&lt;/li&gt;&#xA;&lt;li&gt;Link to note with alias: [[Digital Garden]]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-note-organization&#34;&gt;2. Note Organization&lt;/h3&gt;&#xA;&lt;p&gt;Notes can be organized using:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Categories&lt;/strong&gt;: Help group related content&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Growth Stages&lt;/strong&gt;: Show note maturity&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🌱 Seedling: Fresh ideas&lt;/li&gt;&#xA;&lt;li&gt;🌿 Budding: Work in progress&lt;/li&gt;&#xA;&lt;li&gt;🌳 Evergreen: Well-developed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-navigation&#34;&gt;3. Navigation&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use the search bar to find notes&lt;/li&gt;&#xA;&lt;li&gt;Filter by category or growth stage&lt;/li&gt;&#xA;&lt;li&gt;Toggle between light and dark modes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;Check out these notes to learn more:&lt;/p&gt;</description>
     </item>
   </channel>

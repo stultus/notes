@@ -4,7 +4,7 @@
     
     {
       "title": "A Note on Distributed Computing",
-      "permalink": "http://localhost:1313/garden/a-note-on-distributed-computing/",
+      "permalink": "http://localhost:1313/notes/garden/a-note-on-distributed-computing/",
       "category": "Computer Science",
       "growth": "🌱 Seedling"
     }
@@ -12,7 +12,7 @@
     ,
     {
       "title": "Digital Gardens",
-      "permalink": "http://localhost:1313/garden/digital-garden/",
+      "permalink": "http://localhost:1313/notes/garden/digital-garden/",
       "category": "Concepts",
       "growth": "🌳 Evergreen"
     }
@@ -20,7 +20,7 @@
     ,
     {
       "title": "Welcome to Grdn",
-      "permalink": "http://localhost:1313/garden/welcome/",
+      "permalink": "http://localhost:1313/notes/garden/welcome/",
       "category": "Getting Started",
       "growth": "🌿 Budding"
     }
