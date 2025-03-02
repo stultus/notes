@@ -11,6 +11,22 @@
     
     ,
     {
+      "title": "Application Layout Engine",
+      "permalink": "http://localhost:1313/notes/garden/application-layout-engine/",
+      "category": "Computer Science",
+      "growth": "🌱 Seedling"
+    }
+    
+    ,
+    {
+      "title": "Document Layout Engine",
+      "permalink": "http://localhost:1313/notes/garden/document-layout-engine/",
+      "category": "Computer Science",
+      "growth": "🌱 Seedling"
+    }
+    
+    ,
+    {
       "title": "Digital Gardens",
       "permalink": "http://localhost:1313/notes/garden/digital-garden/",
       "category": "Concepts",
@@ -22,6 +38,22 @@
       "title": "Welcome to Grdn",
       "permalink": "http://localhost:1313/notes/garden/welcome/",
       "category": "Getting Started",
+      "growth": "🌿 Budding"
+    }
+    
+    ,
+    {
+      "title": "Cyber Bullying",
+      "permalink": "http://localhost:1313/notes/garden/cyber-bullying/",
+      "category": "Law",
+      "growth": "🌱 Seedling"
+    }
+    
+    ,
+    {
+      "title": "Cyber Crime",
+      "permalink": "http://localhost:1313/notes/garden/cybercrime/",
+      "category": "Law",
       "growth": "🌿 Budding"
     }
     

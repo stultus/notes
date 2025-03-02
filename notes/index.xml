@@ -16,6 +16,20 @@
       <description>&lt;h4 id=&#34;the-actual-paper&#34;&gt;The actual paper&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://scholar.harvard.edu/files/waldo/files/waldo-94.pdf&#34;&gt;A Note On Distributed Computing&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;what-is-in-it&#34;&gt;What is in it?&lt;/h4&gt;&#xA;&lt;p&gt;Much of the current work in distributed, object-oriented systems is based on the assumption that objects form a single ontological class. This class consists of all entities that can be fully described by the specification of the set of interfaces supported by the object and the semantics of the operations in those interfaces. The class includes objects that share a single address space, objects that are in separate address spaces on the same machine, and objects that are in separate address spaces on different machines (with, perhaps, different architectures). On the view that all objects are essentially the same kind of entity, these differences in relative location are merely an aspect of the implementation of the object. Indeed, the location of an object may change over time, as an object migrates from one machine to another or the implementation of the object changes.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Application Layout Engine</title>
+      <link>http://localhost:1313/notes/garden/application-layout-engine/</link>
+      <pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/garden/application-layout-engine/</guid>
+      <description>&lt;p&gt;Application layout engines manage the arrangement of user interface (UI) components within software applications, ensuring that elements are displayed correctly across different devices and screen sizes.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Application layout engines deal with organizing graphical user interfaces which must accommodate variable window and display sizes.&lt;/p&gt;&#xA;&lt;p&gt;Seems like everybody’s unreflectively in love with the DOM and CSS. They even use bloatware like Electron in order to bring this beloved layout engine to the desktop. What are the alternatives?&#xA;- &lt;a href=&#34;https://begriffs.com/posts/2017-04-13-longterm-computing-reading.html#application-layout&#34;&gt;Joe Nelson&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Document Layout Engine</title>
+      <link>http://localhost:1313/notes/garden/document-layout-engine/</link>
+      <pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/garden/document-layout-engine/</guid>
+      <description>&lt;p&gt;A document layout engine is a software program or library that is used to render and format the layout of a document.&lt;/p&gt;&#xA;&lt;p&gt;Document layout engines are designed to specify exactly how a document should look on a fixed size page. There are a number of popular systems and comparing them should be interesting.&lt;/p&gt;&#xA;&lt;p&gt;There are several different types of document layout engines, each with its own strengths and capabilities. Some common types of document layout engines include:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Digital Gardens</title>
       <link>http://localhost:1313/notes/garden/digital-garden/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
@@ -28,6 +42,20 @@
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/garden/welcome/</guid>
       <description>&lt;p&gt;Welcome! This is a demo of the Grdn theme for Hugo. I&amp;rsquo;ve set up some example notes to help you understand how everything works.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-wikilinks&#34;&gt;1. Wikilinks&lt;/h3&gt;&#xA;&lt;p&gt;You can link to other notes using Obsidian-style wikilinks. Try these:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Basic link: [[features]]&lt;/li&gt;&#xA;&lt;li&gt;Link with custom text: [[formatting|Markdown Formatting Guide]]&lt;/li&gt;&#xA;&lt;li&gt;Link to note with alias: [[Digital Garden]]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-note-organization&#34;&gt;2. Note Organization&lt;/h3&gt;&#xA;&lt;p&gt;Notes can be organized using:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Categories&lt;/strong&gt;: Help group related content&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Growth Stages&lt;/strong&gt;: Show note maturity&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🌱 Seedling: Fresh ideas&lt;/li&gt;&#xA;&lt;li&gt;🌿 Budding: Work in progress&lt;/li&gt;&#xA;&lt;li&gt;🌳 Evergreen: Well-developed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-navigation&#34;&gt;3. Navigation&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use the search bar to find notes&lt;/li&gt;&#xA;&lt;li&gt;Filter by category or growth stage&lt;/li&gt;&#xA;&lt;li&gt;Toggle between light and dark modes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;Check out these notes to learn more:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cyber Bullying</title>
+      <link>http://localhost:1313/notes/garden/cyber-bullying/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/garden/cyber-bullying/</guid>
+      <description>&lt;p&gt;The use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-cyber-bullying&#34;&gt;What is Cyber Bullying&lt;/h2&gt;&#xA;&lt;p&gt;Cyberbullying is the use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature. It can take many forms, including sending harassing or threatening emails, posting abusive or harassing messages on social media or other online platforms, or spreading rumours or false information about someone online.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cyber Crime</title>
+      <link>http://localhost:1313/notes/garden/cybercrime/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/garden/cybercrime/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Note compiled by Athira Sujatha, Priyanka Navle, Adv. Anupama Sripathi and Hrishikesh Bhaskaran as part of a public interest letter sent to social justice department, Kerala&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; This document has not been updated since the Bharatiya Nyaya Samhita was implemented. Therefore, the IPC sections referenced here may be outdated.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;background-note-on-cyber-crime&#34;&gt;Background Note on Cyber Crime&lt;/h3&gt;&#xA;&lt;p&gt;It is increasingly felt that action must be taken to prevent cyber-bullying and trolling in order to make platforms safer for marginalized communities to safely represent their points of view.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
