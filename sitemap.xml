@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/notes/garden/a-note-on-distributed-computing/</loc>
-    <lastmod>2024-11-05T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/notes/garden/engineering-strategy/</loc>
+    <lastmod>2024-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/notes/</loc>
-    <lastmod>2024-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/</loc>
+    <lastmod>2024-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/garden/plaintiff/</loc>
+    <lastmod>2024-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/garden/polymath/</loc>
+    <lastmod>2024-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/garden/stultus/</loc>
+    <lastmod>2024-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/garden/a-note-on-distributed-computing/</loc>
     <lastmod>2024-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/garden/application-layout-engine/</loc>
@@ -16,6 +28,12 @@
   </url><url>
     <loc>http://localhost:1313/notes/garden/document-layout-engine/</loc>
     <lastmod>2024-11-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/garden/footnotes-in-markdown/</loc>
+    <lastmod>2024-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/garden/influencer-marketing/</loc>
+    <lastmod>2024-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/garden/digital-garden/</loc>
     <lastmod>2024-03-20T00:00:00+00:00</lastmod>
