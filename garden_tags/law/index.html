@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html><head><script src="/notes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=notes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+
+    
+    
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    
+    
+    
+    <title>stultus notes | Law</title>
+    <meta name="description" content="">
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeToggleBtn = document.getElementById('dark-mode-toggle');
+            const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+
+            
+            function getCSSVariableValue(variable) {
+                return getComputedStyle(document.body).getPropertyValue(variable).trim();
+            }
+
+
+            
+            function toggleTheme() {
+                if (!themeToggleBtn) return; 
+
+                body.classList.toggle('dark-theme');
+
+                
+                if (themeIcon) {
+                    if (body.classList.contains('dark-theme')) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        themeIcon.classList.remove('fa-sun');
+                        themeIcon.classList.add('fa-moon');
+                        localStorage.setItem('theme', 'light');
+                    }
+                }
+
+            }
+
+            
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            } else if (savedTheme === 'light') {
+                body.classList.remove('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            } else {
+                
+                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+                if (prefersDarkScheme.matches) {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                    }
+                }
+            }
+            
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', toggleTheme);
+            }
+        });
+    </script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/notes/">
+            
+            <b style="font-weight: 800;">stultus notes</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in"> Website</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/about"> About</a>
+                    </li>
+                
+                <li class="nav-item px-2 pt-1">
+                    <button type="button" class="btn" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="content">
+
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../">Home</a></li>
+            <li class="breadcrumb-item"><a href="../../garden/">Garden</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Law</li>
+        </ol>
+    </nav>
+</div>
+
+
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-2 mb-4">Law</h1>
+        
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="blogposts">
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-law js-iso-definition">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Plaintiff</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">A party bringing a suit in civil law against a defendant; accusers.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 17, 2024 -
+            
+            Last updated: Nov 17, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="../../garden_tags/law" class="badge">law</a>
+                
+                <a href="../../garden_tags/definition" class="badge">definition</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="http://localhost:1313/notes/garden/plaintiff/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-law js-iso-cybercrime">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Cyber bullying</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">The use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Oct 13, 2023 -
+            
+            Last updated: Oct 13, 2023
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="../../garden_tags/law" class="badge">law</a>
+                
+                <a href="../../garden_tags/cybercrime" class="badge">cybercrime</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="http://localhost:1313/notes/garden/cyber-bullying/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-law js-iso-cybercrime">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Cyber Crime</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">Note compiled by Athira Sujatha, Priyanka Navle, Adv. Anupama Sripathi and Hrishikesh Bhaskaran as part of a public interest letter sent to social justice department, Kerala</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Oct 13, 2023 -
+            
+            Last updated: Nov 13, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Growing 🌿</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="../../garden_tags/law" class="badge">law</a>
+                
+                <a href="../../garden_tags/cybercrime" class="badge">cybercrime</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="http://localhost:1313/notes/garden/cyber-crime/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Hrishikesh Bhaskaran ♥ 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://x.com/_stultus/" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="https://github.com/stultus" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="https://medium.com/@stultus" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="https://www.linkedin.com/in/stultus/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script src="../../js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="../../js/dark.js"></script>
+</script>
+<script src="../../js/isotope.js"></script>
+<script src="../../js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>
