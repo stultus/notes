@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
-    <lastBuildDate>Tue, 19 Nov 2024 07:54:28 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://stultus.in/notes/garden/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Story</title>
+      <link>https://stultus.in/notes/garden/story/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://stultus.in/notes/garden/story/</guid>
+      <description>Core concepts and definitions of Story, focusing on structure, emotion, and transformation.</description>
+    </item>
     <item>
       <title>Engineering Strategy</title>
       <link>https://stultus.in/notes/garden/engineering-strategy/</link>
