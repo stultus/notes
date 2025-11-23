@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distributed-Computing on stultus notes</title>
-    <link>http://localhost:1313/notes/garden_tags/distributed-computing/</link>
+    <link>https://stultus.in/notes/garden_tags/distributed-computing/</link>
     <description>Recent content in Distributed-Computing on stultus notes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
     <lastBuildDate>Sun, 17 Nov 2024 02:58:24 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/garden_tags/distributed-computing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stultus.in/notes/garden_tags/distributed-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Note on Distributed Computing</title>
-      <link>http://localhost:1313/notes/garden/a-note-on-distributed-computing-paper/</link>
+      <link>https://stultus.in/notes/garden/a-note-on-distributed-computing-paper/</link>
       <pubDate>Tue, 05 Nov 2024 02:58:24 +0530</pubDate>
-      <guid>http://localhost:1313/notes/garden/a-note-on-distributed-computing-paper/</guid>
+      <guid>https://stultus.in/notes/garden/a-note-on-distributed-computing-paper/</guid>
       <description>Notes from the paper by Jim Waldo, Geoff Wyant, Ann Wollrath and Sam Kendall about Distributed computing</description>
     </item>
   </channel>

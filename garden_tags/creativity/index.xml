@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Creativity on stultus notes</title>
-    <link>http://localhost:1313/notes/garden_tags/creativity/</link>
+    <link>https://stultus.in/notes/garden_tags/creativity/</link>
     <description>Recent content in Creativity on stultus notes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Hrishikesh Bhaskaran ♥</copyright>
     <lastBuildDate>Sun, 17 Nov 2024 04:59:46 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/garden_tags/creativity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stultus.in/notes/garden_tags/creativity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Polymath</title>
-      <link>http://localhost:1313/notes/garden/polymath/</link>
+      <link>https://stultus.in/notes/garden/polymath/</link>
       <pubDate>Sun, 17 Nov 2024 04:59:46 +0000</pubDate>
-      <guid>http://localhost:1313/notes/garden/polymath/</guid>
+      <guid>https://stultus.in/notes/garden/polymath/</guid>
       <description>A Person who knows a lot about different subjects</description>
     </item>
   </channel>

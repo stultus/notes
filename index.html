@@ -1,406 +1,805 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.140.2"><script src="/notes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=notes/livereload" data-no-instant defer></script>
+<html><head>
+	<meta name="generator" content="Hugo 0.140.2">
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Digital Garden | stultus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+
+    
+    
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    
+    
+    
+    <title>stultus notes</title>
+    <meta name="description" content="“I wasn&#39;t going to eat it, I was just going to taste it.” - Winnie the Pooh">
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeToggleBtn = document.getElementById('dark-mode-toggle');
+            const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+
+            
+            function getCSSVariableValue(variable) {
+                return getComputedStyle(document.body).getPropertyValue(variable).trim();
+            }
 
 
-<link rel="stylesheet" href="/notes/css/main.min.css">
+            
+            function toggleTheme() {
+                if (!themeToggleBtn) return; 
 
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+                body.classList.toggle('dark-theme');
 
-  </head>
-  <body class="theme-auto">
-    <header>
-  <nav class="container">
-    <a href="/" class="header-left">
-      <svg class="site-logo" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="var(--border-width)">
-        <path d="M4 12V20C4 20.5523 4.44772 21 5 21H19C19.5523 21 20 20.5523 20 20V12M4 12L12 4M4 12H2M12 4L20 12M12 4V3M20 12H22M7 21V15H17V21" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span class="site-title">Digital Garden | stultus</span>
-    </a>
-    <button id="theme-toggle" aria-label="Toggle theme">
-      <svg class="sun-icon" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="var(--border-width)">
-        <circle cx="12" cy="12" r="4"/>
-        <path d="M12 2V4M12 20V22M2 12H4M20 12H22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M4.93 19.07L6.34 17.66M17.66 6.34L19.07 4.93" stroke-linecap="round"/>
-      </svg>
-      <svg class="moon-icon" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="var(--border-width)">
-        <path d="M12 3C10.8134 4.19001 10.0507 5.77167 10.0507 7.46667C10.0507 10.8533 12.8134 13.6 16.224 13.6C17.928 13.6 19.5187 12.8427 20.712 11.6667C20.712 11.6667 20.712 11.6667 20.712 11.6667C20.712 17.3067 16.128 21.8667 10.456 21.8667C4.784 21.8667 0.200012 17.3067 0.200012 11.6667C0.200012 6.02667 4.784 1.46667 10.456 1.46667C11.0027 1.46667 11.5067 1.52 12 1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
-  </nav>
-</header>
+                
+                if (themeIcon) {
+                    if (body.classList.contains('dark-theme')) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        themeIcon.classList.remove('fa-sun');
+                        themeIcon.classList.add('fa-moon');
+                        localStorage.setItem('theme', 'light');
+                    }
+                }
 
+            }
+
+            
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            } else if (savedTheme === 'light') {
+                body.classList.remove('dark-theme');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            } else {
+                
+                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+                if (prefersDarkScheme.matches) {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.classList.remove('fa-moon');
+                        themeIcon.classList.add('fa-sun');
+                    }
+                }
+            }
+            
+            if (themeToggleBtn) {
+                themeToggleBtn.addEventListener('click', toggleTheme);
+            }
+        });
+    </script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <main>
+        <a class="navbar-brand" href="https://stultus.in/notes/">
+            
+            <b style="font-weight: 800;">stultus notes</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in"> Website</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/notes/garden/"> Digital Garden</a>
+                    </li>
+                <li class='nav-item '>
+                        <a class="nav-link" href="https://stultus.in/about"> About</a>
+                    </li>
+                
+                <li class="nav-item px-2 pt-1">
+                    <button type="button" class="btn" id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="content">
+<div class="container py-3">
+    
+    
+    <p class="subheading">Welcome to my <a href="https://schof.co/digital-garden/">digital garden</a>. Here, I share my personal notes and things I learn about the world. Feel free to use any content from here; I appreciate it if you acknowledge the source, but it’s not a problem if you don’t. Please note that there are no permanent links here, except for the domain. This is a living document, so I often rearrange the content, and nothing can be considered complete. Enjoy exploring!</p>
+    
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
         
-<div class="home-container">
-  
-    <div class="home-content">
-      <p>Welcome to my <a href="https://schof.co/digital-garden/">digital garden</a>. Here, I share my personal notes and things I learn about the world. Feel free to use any content from here; I appreciate it if you acknowledge the source, but it’s not a problem if you don’t. Please note that there are no permanent links here, except for the domain. This is a living document, so I often rearrange the content, and nothing can be considered complete. Enjoy exploring!</p>
+        
 
-    </div>
-  
-  
-  <div class="filter-container">
-  <button class="filter-toggle" id="filter-toggle">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-      <path d="M3 4.5C3 4.22386 3.22386 4 3.5 4H20.5C20.7761 4 21 4.22386 21 4.5V6.5C21 6.77614 20.7761 7 20.5 7H3.5C3.22386 7 3 6.77614 3 6.5V4.5Z" stroke-linecap="round"/>
-      <path d="M6 11.5C6 11.2239 6.22386 11 6.5 11H17.5C17.7761 11 18 11.2239 18 11.5V13.5C18 13.7761 17.7761 14 17.5 14H6.5C6.22386 14 6 13.7761 6 13.5V11.5Z" stroke-linecap="round"/>
-      <path d="M10 18.5C10 18.2239 10.2239 18 10.5 18H13.5C13.7761 18 14 18.2239 14 18.5V20.5C14 20.7761 13.7761 21 13.5 21H10.5C10.2239 21 10 20.7761 10 20.5V18.5Z" stroke-linecap="round"/>
-    </svg>
-    <span>Filters</span>
-  </button>
 
-  <div class="filter-bar">
+
     
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Search titles..">
-      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <circle cx="11" cy="11" r="7"/>
-        <path d="M16.5 16.5L21 21" stroke-linecap="round"/>
-      </svg>
+    
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-engineering js-iso-strategy js-iso-leadership">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Engineering Strategy</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">How to write good engineering strategies</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 19, 2024 -
+            
+            Last updated: Nov 19, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/engineering" class="badge">engineering</a>
+                
+                <a href="./garden_tags/strategy" class="badge">strategy</a>
+                
+                <a href="./garden_tags/leadership" class="badge">leadership</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/engineering-strategy/" class="stretched-link"></a>
     </div>
-    
-    
-    
-    <div class="category-filter custom-select">
-      <div class="select-selected">All Categories</div>
-      <div class="select-items">
-        <div class="select-item" data-value="">All Categories</div>
-        
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-        
-          
-          <div class="select-item" data-value="Computer Science">
-            Computer Science
-            
-              <span class="count">3</span>
-            
-          </div>
-        
-          
-          <div class="select-item" data-value="Concepts">
-            Concepts
-            
-              <span class="count">4</span>
-            
-          </div>
-        
-          
-          <div class="select-item" data-value="Engineering">
-            Engineering
-            
-              <span class="count">1</span>
-            
-          </div>
-        
-          
-          <div class="select-item" data-value="Law">
-            Law
-            
-              <span class="count">3</span>
-            
-          </div>
-        
-          
-          <div class="select-item" data-value="Marketing">
-            Marketing
-            
-              <span class="count">1</span>
-            
-          </div>
-        
-      </div>
-    </div>
-    
-    
-    
-    <div class="growth-filter custom-select">
-      <div class="select-selected">All Stages</div>
-      <div class="select-items">
-        <div class="select-item" data-value="">All Stages</div>
-        
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-          
-            
-          
-        
-        
-          
-          <div class="select-item" data-value="🌱 Seedling">
-            🌱 Seedling
-          </div>
-        
-          
-          <div class="select-item" data-value="🌳 Evergreen">
-            🌳 Evergreen
-          </div>
-        
-          
-          <div class="select-item" data-value="🌿 Budding">
-            🌿 Budding
-          </div>
-        
-      </div>
-    </div>
-    
-  </div>
 </div>
 
-  <div class="notes-list">
-  
-    <div class="note-item" data-category="Engineering" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/engineering-strategy/">Engineering Strategy</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Engineering</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Law" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/plaintiff/">Plaintiff</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Law</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Concepts" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/polymath/">Polymath</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Concepts</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Concepts" data-growth="">
-      <div class="note-title">
-        <h3><a href="/notes/garden/stultus/">stultus</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Concepts</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Computer Science" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/a-note-on-distributed-computing/">A Note on Distributed Computing</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Computer Science</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Computer Science" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/application-layout-engine/">Application Layout Engine</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Computer Science</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Computer Science" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/document-layout-engine/">Document Layout Engine</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Computer Science</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Concepts" data-growth="🌳 Evergreen">
-      <div class="note-title">
-        <h3><a href="/notes/garden/footnotes-in-markdown/">Footnotes in Markdown</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Concepts</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Marketing" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/influencer-marketing/">Influencer Marketing</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Marketing</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Concepts" data-growth="🌳 Evergreen">
-      <div class="note-title">
-        <h3><a href="/notes/garden/digital-garden/">Digital Gardens</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Concepts</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Law" data-growth="🌱 Seedling">
-      <div class="note-title">
-        <h3><a href="/notes/garden/cyber-bullying/">Cyber Bullying</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Law</span>
-        </div>
-      
-    </div>
-  
-    <div class="note-item" data-category="Law" data-growth="🌿 Budding">
-      <div class="note-title">
-        <h3><a href="/notes/garden/cybercrime/">Cyber Crime</a></h3>
-      </div>
-      
-        <div class="note-meta">
-          <span class="category">Law</span>
-        </div>
-      
-    </div>
-  
-</div> 
-</div>
 
-      </main>
-    </div>
-    <footer>
-  <nav class="container">
-    <div class="footer-left">
-      
-        <p>Built with <a href="https://gohugo.io">Hugo</a></p>
-      
-    </div>
-    <div class="footer-right">
-      
-        <p>Using the GRDN theme</p>
-      
-    </div>
-  </nav>
-</footer>
+        
+        
+
+
 
     
-<script src="/notes/js/main.min.js"></script>
+    
+
+    
+    
+
+<div class="col js-iso-law js-iso-definition">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Plaintiff</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">A party bringing a suit in civil law against a defendant; accusers.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 17, 2024 -
+            
+            Last updated: Nov 17, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
 
 
-<script src="/notes/js/search.min.js"></script>
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/law" class="badge">law</a>
+                
+                <a href="./garden_tags/definition" class="badge">definition</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/plaintiff/" class="stretched-link"></a>
+    </div>
+</div>
 
 
-<script src="/notes/js/theme-toggle.min.js"></script> 
-  </body>
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-creativity js-iso-learning">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Polymath</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">A Person who knows a lot about different subjects</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 17, 2024 -
+            
+            Last updated: Nov 17, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/creativity" class="badge">creativity</a>
+                
+                <a href="./garden_tags/learning" class="badge">learning</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/polymath/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-academic-paper js-iso-distributed-computing js-iso-computer-science">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">A Note on Distributed Computing</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">Notes from the paper by Jim Waldo, Geoff Wyant, Ann Wollrath and Sam Kendall about Distributed computing</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 5, 2024 -
+            
+            Last updated: Nov 17, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/academic-paper" class="badge">academic-paper</a>
+                
+                <a href="./garden_tags/distributed-computing" class="badge">distributed-computing</a>
+                
+                <a href="./garden_tags/computer-science" class="badge">computer-science</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/a-note-on-distributed-computing-paper/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+<div class="col js-iso-computer-science">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Application layout engine</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">Application layout engines manage the arrangement of user interface (UI) components within software applications, ensuring that elements are displayed correctly across different devices and screen sizes.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 4, 2024 -
+            
+            Last updated: Nov 4, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/computer-science" class="badge">computer-science</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/application_layout_engine/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+<div class="col js-iso-computer-science">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Document layout engine</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">A document layout engine is a software program or library that is used to render and format the layout of a document.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 4, 2024 -
+            
+            Last updated: Nov 4, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/computer-science" class="badge">computer-science</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/document_layout_engine/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-markdown js-iso-syntax">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Footnotes in Markdown</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">Syntax to create footnotes in Markdown</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 3, 2024 -
+            
+            Last updated: Nov 3, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Evergreen 🌳</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/markdown" class="badge">markdown</a>
+                
+                <a href="./garden_tags/syntax" class="badge">syntax</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/footnote_in_markdown/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-influencer-marketing js-iso-marketing">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Influencer Marketing</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">Notes about influencer marketing - Data, recommendations and ideas</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 3, 2024 -
+            
+            Last updated: Nov 3, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/influencer-marketing" class="badge">influencer-marketing</a>
+                
+                <a href="./garden_tags/marketing" class="badge">marketing</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/influencer_marketing/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-digital-garden js-iso-note-taking js-iso-zettelkasten js-iso-process">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Digital Garden</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">A Digital Garden/Zettelkasten is a personal tool for thinking and writing. It has hypertextual features to make a web of thought possible.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Nov 3, 2024 -
+            
+            Last updated: Nov 3, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Evergreen 🌳</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/digital-garden" class="badge">digital-garden</a>
+                
+                <a href="./garden_tags/note-taking" class="badge">note-taking</a>
+                
+                <a href="./garden_tags/zettelkasten" class="badge">zettelkasten</a>
+                
+                <a href="./garden_tags/process" class="badge">process</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/digital_garden/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-pseudonym js-iso-personal">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">stultus</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">&lsquo;Stultus&rsquo; is a Latin word and it means &lsquo;Stupid/Foolish&rsquo;. On the internet, &lsquo;stultus&rsquo; is the pseudonym adopted by Hrishikesh Bhaskaran.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Oct 23, 2023 -
+            
+            Last updated: Nov 17, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Evergreen 🌳</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/pseudonym" class="badge">pseudonym</a>
+                
+                <a href="./garden_tags/personal" class="badge">personal</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/stultus/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-law js-iso-cybercrime">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Cyber bullying</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">The use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature.</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Oct 13, 2023 -
+            
+            Last updated: Oct 13, 2023
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Seeding 🌱</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/law" class="badge">law</a>
+                
+                <a href="./garden_tags/cybercrime" class="badge">cybercrime</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/cyber-bullying/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+        
+
+
+
+    
+    
+
+    
+    
+
+<div class="col js-iso-law js-iso-cybercrime">
+    <div class="card-garden p-4 rounded-3 position-relative">
+        
+        <h4 class="mb-3 text-center">Cyber Crime</h4>
+        
+        <p class="text-center fs-6 fst-italic serif">Note compiled by Athira Sujatha, Priyanka Navle, Adv. Anupama Sripathi and Hrishikesh Bhaskaran as part of a public interest letter sent to social justice department, Kerala</p>
+        
+        <p class="card-date text-center mb-2">
+            
+            
+                Created Oct 13, 2023 -
+            
+            Last updated: Nov 13, 2024
+        </p>
+        <hr class="dropdown-divider">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                
+    
+    <span class="status text-nowrap">Growing 🌿</span>
+    
+
+
+            </div>
+            <div class="text-end">
+                
+                
+                
+                <a href="./garden_tags/law" class="badge">law</a>
+                
+                <a href="./garden_tags/cybercrime" class="badge">cybercrime</a>
+                
+                
+                
+            </div>
+        </div>
+        <a href="https://stultus.in/notes/garden/cyber-crime/" class="stretched-link"></a>
+    </div>
+</div>
+
+
+        
+    </div>
+    
+    <div class="d-flex flex-row-reverse">
+        <a href="https://stultus.in/notes/garden/" role="button" class="btn btn-sm see-all">See all articles</a>
+    </div>
+    
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Hrishikesh Bhaskaran ♥ 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://x.com/_stultus/" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="https://github.com/stultus" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="https://medium.com/@stultus" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+            <a class="footer-social px-2"  href="https://www.linkedin.com/in/stultus/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script src="./js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="./js/dark.js"></script>
+</script>
+<script src="./js/isotope.js"></script>
+<script src="./js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
 </html>
